@@ -15,3 +15,31 @@
 [自作ライブラリの管理（git＋composer）](https://www.wetch.co.jp/%E8%87%AA%E4%BD%9C%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%81%AE%E7%AE%A1%E7%90%86%EF%BC%88git%EF%BC%8Bcomposer%EF%BC%89/)
 
 [【Laravel】パッケージ開発の第一歩 〜helloページを出力する〜](https://qiita.com/nasteng/items/350fb46d3f08479a7bcf#laravel%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%81%B4%E3%81%AEcomposerjson%E3%82%92%E7%B7%A8%E9%9B%86)
+
+## 開発時の使い方
+1. group-system/composer.jsonに以下を追加
+(group-system/packages/group-system-sample-packageeで開発を行ってる場合)
+```
+"repositories": [{
+    "type": "path",
+    "url": "./packages/group-system-sample-package",
+    "options": {
+        "symlink": true
+    }
+}],
+```
+2. group-system/で以下を実行
+(sample/composer.jsonのnameがryosuzaki/group-system-sample-packageの場合)
+```
+composer require ryosuzaki/group-system-sample-package
+```
+
+## githubからの使い方
+
+1. group-system/で以下を実行
+```
+composer config repositories.group-system-sample-package vcs https://github.com/ryosuzaki/group-system-sample-package.git
+```
+```
+composer require ryosuzaki/group-system-sample-package
+```
