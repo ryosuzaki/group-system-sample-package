@@ -54,12 +54,12 @@ php artisan serve
 
 - group-system
    - packages
-     - group-system-example-package
+     - group-system-example
        - ...
        - README.md
        - composer.json
 
-### 4. group-system-example-package/composer.jsonを適宜変更
+### 4. group-system-example/composer.jsonを適宜変更
 
 ### 5. SampleServiceProvider.phpの名称をExampleServiceProvider.phpに、内容も適宜変更
 
@@ -72,7 +72,7 @@ php artisan serve
 ```
 "repositories": [{
     "type": "path",
-    "url": "./packages/group-system-example-package",
+    "url": "./packages/group-system-example",
     "options": {
         "symlink": true
     }
@@ -82,7 +82,7 @@ php artisan serve
 ### 9. group-system/で以下を実行
 
 ```
-composer require ryosuzaki/group-system-example-package
+composer require ryosuzaki/group-system-example
 ```
 
 
