@@ -1,5 +1,5 @@
 {
-    "name": "ryosuzaki/group-system-sample",
+    "name": "ryosuzaki/group-system-sample-package",
     "description": "Laravel GroupSystem パッケージ開発 Sample",
     "require": {
         "php": "^7.2"
