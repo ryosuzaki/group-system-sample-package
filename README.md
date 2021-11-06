@@ -8,7 +8,7 @@
 
 ## このパッケージの使い方
 
-1. group-system/で以下を実行
+### 1. group-system/で以下を実行
 ```
 composer config repositories.group-system-sample-package vcs https://github.com/ryosuzaki/group-system-sample-package.git
 
@@ -20,14 +20,14 @@ php artisan db:seed --class=GroupSystem\\Sample\\Seeds\\SampleSeeder
 
 php artisan serve
 ```
-2. [http://127.0.0.1:8000/sample/index](http://127.0.0.1:8000/sample/index)にアクセス
-3. 画像のように表示出来れば成功
+### 2. [http://127.0.0.1:8000/sample/index](http://127.0.0.1:8000/sample/index)にアクセス
+### 3. 画像のように表示出来れば成功
 
 ![image](https://user-images.githubusercontent.com/71608299/140604876-c0981eaf-04b9-4b3b-84c2-df8e065e6140.png)
 
 # 他パッケージ開発時の使い方
-1. このパッケージをzipダウンロード
-2. group-system/packages/group-system-sample-packageに配置
+### 1. このパッケージをzipダウンロード
+### 2. group-system/packages/group-system-sample-packageに配置
 
 ファイル構成
 - group-system
@@ -38,7 +38,7 @@ php artisan serve
        - composer.json
 
 
-3. sampleを変更(今回はexampleに変更)
+### 3. sampleを変更(今回はexampleに変更)
 
 - group-system
    - packages
@@ -47,15 +47,15 @@ php artisan serve
        - README.md
        - composer.json
 
-4. group-system-example-package/composer.jsonを適宜変更
+### 4. group-system-example-package/composer.jsonを適宜変更
 
-5. SampleServiceProvider.phpの名称をExampleServiceProvider.phpに、内容も適宜変更
+### 5. SampleServiceProvider.phpの名称をExampleServiceProvider.phpに、内容も適宜変更
 
-6. その他のファイルも名称、内容を適宜変更
+### 6. その他のファイルも名称、内容を適宜変更
 
-7. パッケージ開発を行う
+### 7. パッケージ開発を行う
 
-8. group-system/composer.jsonに以下を追加
+### 8. group-system/composer.jsonに以下を追加
 
 ```
 "repositories": [{
@@ -67,7 +67,7 @@ php artisan serve
 }],
 ```
 
-9. group-system/で以下を実行
+### 9. group-system/で以下を実行
 
 ```
 composer require ryosuzaki/group-system-example-package
