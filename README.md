@@ -6,6 +6,11 @@
 
 [【Laravel】パッケージ開発の第一歩 〜helloページを出力する〜](https://qiita.com/nasteng/items/350fb46d3f08479a7bcf#laravel%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E5%81%B4%E3%81%AEcomposerjson%E3%82%92%E7%B7%A8%E9%9B%86)
 
+
+
+
+
+
 ## このパッケージの使い方
 
 ### 1. group-system/で以下を実行
@@ -25,7 +30,14 @@ php artisan serve
 
 ![image](https://user-images.githubusercontent.com/71608299/140604876-c0981eaf-04b9-4b3b-84c2-df8e065e6140.png)
 
-# 他パッケージ開発時の使い方
+
+
+
+
+
+
+
+## 他パッケージ開発時の使い方
 ### 1. このパッケージをzipダウンロード
 ### 2. group-system/packages/group-system-sample-packageに配置
 
