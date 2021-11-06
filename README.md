@@ -38,7 +38,7 @@ php artisan serve
 
 
 ## 他パッケージ開発時の使い方
-### 1. このパッケージをzipダウンロード
+### 1. このパッケージをダウンロード
 ### 2. group-system/packages/group-system-sample-packageに配置
 
 ファイル構成
