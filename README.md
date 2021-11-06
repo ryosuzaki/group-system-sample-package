@@ -67,7 +67,7 @@ php artisan serve
 }],
 ```
 
-. group-system/で以下を実行
+9. group-system/で以下を実行
 
 ```
 composer require ryosuzaki/group-system-example-package
