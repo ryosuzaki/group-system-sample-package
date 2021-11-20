@@ -50,7 +50,7 @@ php artisan serve
        - composer.json
 
 
-### 3. sampleを変更(今回はexampleに変更)
+### 3. フォルダ名を変更(今回はexampleに変更)
 
 - group-system
    - packages
