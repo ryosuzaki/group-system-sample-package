@@ -37,7 +37,7 @@ php artisan serve
 
 
 
-## 他パッケージ開発時の使い方
+## 新しいパッケージ開発時の使い方
 ### 1. このパッケージをダウンロード
 ### 2. group-system/packages/group-system-sample-packageに配置
 
@@ -83,6 +83,14 @@ php artisan serve
 
 ```
 composer require ryosuzaki/group-system-example
+
+//publishを実行する(任意)
+php artisan vendor:publish --provider="GroupSystem\Example\ExampleServiceProvider"
 ```
 
-
+## パッケージを削除
+### 1. group-system-example/composer.jsonのrepositoriesと、require又はrequire-dev内の削除するパッケージの記述を削除する。
+### 2. group-system/で以下を実行
+```
+composer update
+```
