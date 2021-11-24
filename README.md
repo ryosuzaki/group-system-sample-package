@@ -19,6 +19,8 @@ composer config repositories.group-system-sample-package vcs https://github.com/
 
 composer require ryosuzaki/group-system-sample-package
 
+php artisan vendor:publish --provider="GroupSystem\Sample\SampleServiceProvider"
+
 php artisan migrate
 
 php artisan db:seed --class=GroupSystem\\Sample\\Seeds\\SampleSeeder
