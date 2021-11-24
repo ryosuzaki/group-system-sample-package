@@ -88,9 +88,14 @@ composer require ryosuzaki/group-system-example
 php artisan vendor:publish --provider="GroupSystem\Example\ExampleServiceProvider"
 ```
 
-## パッケージを削除
+## パッケージを削除 1
 ### 1. group-system-example/composer.jsonのrepositoriesと、require又はrequire-dev内の削除するパッケージの記述を削除する。
 ### 2. group-system/で以下を実行
 ```
 composer update
+```
+## パッケージを削除 2
+### 2. group-system/で以下を実行
+```
+composer remove ryosuzaki/group-system-example
 ```
